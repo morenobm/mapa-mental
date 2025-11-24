@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Atividade de Mapas Mentais</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        
+        .intro {
+            background-color: #e8f4fc;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 25px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        input[type="text"], input[type="email"], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border 0.3s;
+        }
+        
+        input:focus, select:focus, textarea:focus {
+            border-color: #3498db;
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+        }
+        
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .rating-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        
+        .rating-option {
+            text-align: center;
+            flex: 1;
+            padding: 10px;
+            margin: 0 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .rating-option:hover {
+            background-color: #f0f8ff;
+        }
+        
+        .rating-option.selected {
+            background-color: #3498db;
+            color: white;
+            border-color: #3498db;
+        }
+        
+        .rating-option input {
+            display: none;
+        }
+        
+        .checkbox-group {
+            margin: 15px 0;
+        }
+        
+        .checkbox-group label {
+            display: flex;
+            align-items: center;
+            font-weight: normal;
+            margin-bottom: 10px;
+        }
+        
+        .checkbox-group input {
+            margin-right: 10px;
+        }
+        
+        .required {
+            color: #e74c3c;
+        }
+        
+        .btn-submit {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 14px 30px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+            font-weight: 600;
+        }
+        
+        .btn-submit:hover {
+            background-color: #2980b9;
+        }
+        
+        .section-title {
+            font-size: 18px;
+            color: #3498db;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .rating-container {
+                flex-direction: column;
+            }
+            
+            .rating-option {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Feedback - Atividade de Mapas Mentais</h1>
+        
+        <div class="intro">
+            <p>Este formulário tem como objetivo coletar seu feedback sobre a atividade de monitoria que consistiu no desenvolvimento de mapas mentais semanais. Suas respostas nos ajudarão a avaliar se a atividade gerou resultados no seu desempenho acadêmico.</p>
+            <p>Obrigado por dedicar seu tempo para responder!</p>
+        </div>
+        
+         
+            <h2 class="section-title">Avaliação da Atividade</h2>
+            
+            <div class="form-group">
+                <label>Como você avalia a utilidade geral da atividade de mapas mentais? <span class="required">*</span></label>
+                <div class="rating-container">
+                    <div class="rating-option">
+                        <input type="radio" id="utilidade-1" name="utilidade" value="1" required>
+                        <label for="utilidade-1">Pouco útil</label>
+                    </div>
+                    <div class="rating-option">
+                        <input type="radio" id="utilidade-2" name="utilidade" value="2">
+                        <label for="utilidade-2">Pouco útil</label>
+                    </div>
+                    <div class="rating-option">
+                        <input type="radio" id="utilidade-3" name="utilidade" value="3">
+                        <label for="utilidade-3">Neutro</label>
+                    </div>
+                    <div class="rating-option">
+                        <input type="radio" id="utilidade-4" name="utilidade" value="4">
+                        <label for="utilidade-4">Útil</label>
+                    </div>
+                    <div class="rating-option">
+                        <input type="radio" id="utilidade-5" name="utilidade" value="5">
+                        <label for="utilidade-5">Muito útil</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>Com que frequência você participou das atividades de mapas mentais? <span class="required">*</span></label>
+                <select id="frequencia" name="frequencia" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="todas">Todas as semanas</option>
+                    <option value="maioria">Na maioria das semanas</option>
+                    <option value="algumas">Em algumas semanas</option>
+                    <option value="poucas">Em poucas semanas</option>
+                    <option value="nenhuma">Não participei</option>
+                </select>
+            </div>
+            
+            <h2 class="section-title">Impacto no Desempenho</h2>
+            
+            <div class="form-group">
+                <label>Na sua opinião, a atividade de mapas mentais contribuiu para melhorar seu desempenho acadêmico? <span class="required">*</span></label>
+                <div class="rating-container">
+                    <div class="rating-option">
+                        <input type="radio" id="desempenho-1" name="desempenho" value="1" required>
+                        <label for="desempenho-1">Não contribuiu</label>
+                    </div>
+                    <div class="rating-option">
+                        <input type="radio" id="desempenho-2" name="desempenho" value="2">
+                        <label for="desempenho-2">Contribuiu pouco</label>
+                    </div>
+                    <div class="rating-option">
+                        <input type="radio" id="desempenho-3" name="desempenho" value="3">
+                        <label for="desempenho-3">Contribuiu moderadamente</label>
+                    </div>
+                    <div class="rating-option">
+                        <input type="radio" id="desempenho-4" name="desempenho" value="4">
+                        <label for="desempenho-4">Contribuiu bastante</label>
+                    </div>
+                    <div class="rating-option">
+                        <input type="radio" id="desempenho-5" name="desempenho" value="5">
+                        <label for="desempenho-5">Contribuiu muito</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>Quais aspectos do seu desempenho você acredita que foram mais impactados pela atividade? (Marque todas as opções aplicáveis)</label>
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" name="aspectos" value="compreensao">
+                        Compreensão dos conteúdos
+                    </label>
+                    <label>
+                        <input type="checkbox" name="aspectos" value="organizacao">
+                        Organização das ideias
+                    </label>
+                    <label>
+                        <input type="checkbox" name="aspectos" value="memorizacao">
+                        Memorização de conceitos
+                    </label>
+                    <label>
+                        <input type="checkbox" name="aspectos" value="revisao">
+                        Revisão para provas
+                    </label>
+                    <label>
+                        <input type="checkbox" name="aspectos" value="aprendizado">
+                        Aprendizado ativo
+                    </label>
+                    <label>
+                        <input type="checkbox" name="aspectos" value="nenhum">
+                        Nenhum aspecto foi impactado
+                    </label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="notas">Você percebeu alguma melhoria em suas notas ou avaliações após participar da atividade? Se sim, descreva brevemente.</label>
+                <textarea id="notas" name="notas"></textarea>
+            </div>
+            
+            <h2 class="section-title">Aspectos Específicos</h2>
+            
+            <div class="form-group">
+                <label>Como você avalia a facilidade de implementação dos mapas mentais no seu estudo? <span class="required">*</span></label>
+                <div class="rating-container">
+                    <div class="rating-option">
+                        <input type="radio" id="facilidade-1" name="facilidade" value="1" required>
+                        <label for="facilidade-1">Muito difícil</label>
+                    </div>
+                    <div class="rating-option">
+                        <input type="radio" id="facilidade-2" name="facilidade" value="2">
+                        <label for="facilidade-2">Difícil</label>
+                    </div>
+                    <div class="rating-option">
+                        <input type="radio" id="facilidade-3" name="facilidade" value="3">
+                        <label for="facilidade-3">Neutro</label>
+                    </div>
+                    <div class="rating-option">
+                        <input type="radio" id="facilidade-4" name="facilidade" value="4">
+                        <label for="facilidade-4">Fácil</label>
+                    </div>
+                    <div class="rating-option">
+                        <input type="radio" id="facilidade-5" name="facilidade" value="5">
+                        <label for="facilidade-5">Muito fácil</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>Você continuará utilizando mapas mentais como técnica de estudo no futuro? <span class="required">*</span></label>
+                <select id="continuacao" name="continuacao" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="sim_com_certeza">Sim, com certeza</option>
+                    <option value="sim_provavelmente">Sim, provavelmente</option>
+                    <option value="talvez">Talvez</option>
+                    <option value="provavelmente_nao">Provavelmente não</option>
+                    <option value="definitivamente_nao">Definitivamente não</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="sugestoes">Tem alguma sugestão para melhorar a atividade de mapas mentais?</label>
+                <textarea id="sugestoes" name="sugestoes"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="comentarios_adicionais">Comentários adicionais (opcional)</label>
+                <textarea id="comentarios_adicionais" name="comentarios_adicionais"></textarea>
+            </div>
+            
+            <button type="submit" class="btn-submit">Enviar Feedback</button>
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Adiciona interatividade às opções de avaliação
+            const ratingOptions = document.querySelectorAll('.rating-option');
+            
+            ratingOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    const radio = this.querySelector('input[type="radio"]');
+                    radio.checked = true;
+                    
+                    // Remove a classe 'selected' de todas as opções no mesmo grupo
+                    const groupName = radio.name;
+                    document.querySelectorAll(`input[name="${groupName}"]`).forEach(r => {
+                        r.parentElement.classList.remove('selected');
+                    });
+                    
+                    // Adiciona a classe 'selected' à opção clicada
+                    this.classList.add('selected');
+                });
+            });
+            
+            // Validação do formulário
+            const form = document.getElementById('feedbackForm');
+            
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Verifica se todos os campos obrigatórios estão preenchidos
+                const requiredFields = form.querySelectorAll('[required]');
+                let isValid = true;
+                
+                requiredFields.forEach(field => {
+                    if (!field.value) {
+                        isValid = false;
+                        field.style.borderColor = '#e74c3c';
+                    } else {
+                        field.style.borderColor = '#ddd';
+                    }
+                });
+                
+                if (isValid) {
+                    alert('Obrigado pelo seu feedback! Suas respostas foram registradas.');
+                    form.reset();
+                    
+                    // Remove a classe 'selected' de todas as opções de avaliação
+                    document.querySelectorAll('.rating-option').forEach(option => {
+                        option.classList.remove('selected');
+                    });
+                } else {
+                    alert('Por favor, preencha todos os campos obrigatórios.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
