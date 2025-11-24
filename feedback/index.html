@@ -173,7 +173,7 @@
             <p>Obrigado por dedicar seu tempo para responder!</p>
         </div>
         
-        <form action="https://formsubmit.co/moreno.m.bruna@gmail.com" method="POST" id="feedbackForm">
+        <form action="https://formsubmit.co/bruna.marques.moreno@usp.br" method="POST" id="feedbackForm">
     <!-- ADICIONE estas linhas -->
     <input type="hidden" name="_captcha" value="false">
     <input type="hidden" name="_subject" value="Novo feedback - Mapas Mentais">
@@ -344,59 +344,72 @@
         </form>
     </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Adiciona interatividade às opções de avaliação
-            const ratingOptions = document.querySelectorAll('.rating-option');
-            
-            ratingOptions.forEach(option => {
-                option.addEventListener('click', function() {
-                    const radio = this.querySelector('input[type="radio"]');
-                    radio.checked = true;
-                    
-                    // Remove a classe 'selected' de todas as opções no mesmo grupo
-                    const groupName = radio.name;
-                    document.querySelectorAll(`input[name="${groupName}"]`).forEach(r => {
-                        r.parentElement.classList.remove('selected');
-                    });
-                    
-                    // Adiciona a classe 'selected' à opção clicada
-                    this.classList.add('selected');
-                });
-            });
-            
-            // Validação do formulário
-            const form = document.getElementById('feedbackForm');
-            
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Adiciona interatividade às opções de avaliação
+        const ratingOptions = document.querySelectorAll('.rating-option');
+        
+        ratingOptions.forEach(option => {
+            option.addEventListener('click', function() {
+                const radio = this.querySelector('input[type="radio"]');
+                radio.checked = true;
                 
-                // Verifica se todos os campos obrigatórios estão preenchidos
-                const requiredFields = form.querySelectorAll('[required]');
-                let isValid = true;
-                
-                requiredFields.forEach(field => {
-                    if (!field.value) {
-                        isValid = false;
-                        field.style.borderColor = '#e74c3c';
-                    } else {
-                        field.style.borderColor = '#ddd';
-                    }
+                // Remove a classe 'selected' de todas as opções no mesmo grupo
+                const groupName = radio.name;
+                document.querySelectorAll(`input[name="${groupName}"]`).forEach(r => {
+                    r.parentElement.classList.remove('selected');
                 });
                 
-                if (isValid) {
-                    alert('Obrigado pelo seu feedback! Suas respostas foram registradas.');
-                    form.reset();
-                    
-                    // Remove a classe 'selected' de todas as opções de avaliação
-                    document.querySelectorAll('.rating-option').forEach(option => {
-                        option.classList.remove('selected');
-                    });
-                } else {
-                    alert('Por favor, preencha todos os campos obrigatórios.');
-                }
+                // Adiciona a classe 'selected' à opção clicada
+                this.classList.add('selected');
             });
         });
+        
+        // Validação do formulário
+        const form = document.getElementById('feedbackForm');
+        
+        form.addEventListener('submit', function(e) {
+            // Verifica se todos os campos obrigatórios estão preenchidos
+            const requiredFields = form.querySelectorAll('[required]');
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+                // Verifica se é um radio button
+                if (field.type === 'radio') {
+                    const radioGroup = document.querySelectorAll(`input[name="${field.name}"]`);
+                    const isRadioChecked = Array.from(radioGroup).some(radio => radio.checked);
+                    if (!isRadioChecked) {
+                        isValid = false;
+                        // Destaca o grupo de radio buttons
+                        radioGroup[0].closest('.form-group').style.border = '2px solid #e74c3c';
+                        radioGroup[0].closest('.form-group').style.padding = '10px';
+                        radioGroup[0].closest('.form-group').style.borderRadius = '5px';
+                    } else {
+                        radioGroup[0].closest('.form-group').style.border = 'none';
+                        radioGroup[0].closest('.form-group').style.padding = '0';
+                    }
+                } else if (!field.value) {
+                    isValid = false;
+                    field.style.borderColor = '#e74c3c';
+                } else {
+                    field.style.borderColor = '#ddd';
+                }
+            });
+            
+            if (!isValid) {
+                e.preventDefault();
+                alert('Por favor, preencha todos os campos obrigatórios.');
+            } else {
+                // Formulário válido - permite o envio para o FormSubmit
+                alert('Obrigado pelo seu feedback! Enviando suas respostas...');
+                // Remove a classe 'selected' de todas as opções de avaliação
+                document.querySelectorAll('.rating-option').forEach(option => {
+                    option.classList.remove('selected');
+                });
+                // O formulário será enviado normalmente para o FormSubmit
+            }
+        });
+    });
     </script>
 </body>
 </html>
