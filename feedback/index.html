@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feedback - Atividade de Mapas Mentais</title>
+    <title><i>Feedback</i> - Atividade de Mapas Mentais</title>
     <style>
         * {
             box-sizing: border-box;
@@ -173,7 +173,20 @@
             <p>Obrigado por dedicar seu tempo para responder!</p>
         </div>
         
-         
+        <form action="https://formsubmit.co/moreno.m.bruna@gmail.com" method="POST" id="feedbackForm">
+    <!-- ADICIONE estas linhas -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="Novo feedback - Mapas Mentais">
+    <input type="hidden" name="_template" value="table">
+    
+    <div class="form-group">
+        <label for="nome">Nome <span class="required">*</span></label>
+        <input type="text" id="nome" name="nome" required>
+    </div>
+    
+    <!-- ... resto do formulário ... -->
+            
+            
             <h2 class="section-title">Avaliação da Atividade</h2>
             
             <div class="form-group">
