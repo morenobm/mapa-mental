@@ -1,12 +1,10 @@
 ---
-title: "Criando Mapas Mentais"
-subtitle: "Desenvolvimento das atividades propostas no Programa de Aperfeiçoamento de Ensino"
+title: "Semeando a Genética em 3 min"
 institute: "Departamento de Genética - Programa de Pós-Graduação em Genética e Melhoramento de Plantas"
-date: today
-author: "Bruna Marques Moreno"
 date-format: "YYYY"
 format: 
   revealjs: 
+    embed-resources: true
     inscremental: true
     css: styles.css
   pdf: 
@@ -14,96 +12,127 @@ format:
     documentclass: article
 ---
 
-## Introdução
+## [Introdução]{style="color: #581D22;"}
+- Atividade com objetivo: **Utilização dos mapas mentais para facilitar o aprendizado de genética + divulgação de ciência para a sociedade**
 
-- Parte do treinamento promovido pelo Programa de Aperfeiçoamento do Ensino (PAE)
-- Objetivo: **Auxiliar o aprendizado de genética utilizando mapas mentais**
+[**Mapa mental + vídeo de divulgação científica**]{style="display: block; text-align: center; color: #581D22;"}
 
-- Breve pesquisa sobre 
+- Mapa mental $\to$ roteiro para o vídeo;
+- Vídeo $\to$  divulgação da genética.
 
-![ ](Imagens/qr inicio para verificar percepcao.png){fig-align="center"}
+## [Breve pesquisa sobre]{style="color: #581D22;"}
 
-## Conceito
+![ ](Imagens/novo_formulario.jpg){fig-align="center"}
 
-- Desenvolvido por Tony Buzan em 1974, com base no conceito de *Radiant thinking*
+
+## [O que é um mapa mental?]{style="color: #581D22;"}
+
+- Desenvolvido por [Tony Buzan](https://www.google.com/search?q=tony+buzan&oq=tony+buzan&gs_lcrp=EgZjaHJvbWUqCggAEAAY4wIYgAQyCggAEAAY4wIYgAQyBwgBEC4YgAQyBwgCEAAYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyCAgHEAAYFhgeMggICBAAGBYYHjIICAkQABgWGB7SAQgyOTU2ajBqN6gCALACAA&sourceid=chrome&source=chrome.ob&ie=UTF-8) em 1974, com base no conceito de *Radiant thinking*
 
 - [TED - The Power of a Mind to Map: Tony Buzan at TEDxSquareMile](https://www.youtube.com/watch?v=nMZCghZ1hB4)
 
-![Tony Buzan - criador da técnica de mapas mentais](Imagens/toninho.jpeg){fig-align="center" #fig-imagem1}
+```{r}
+#| warning: false
+#| echo: false
+#| label: fig-toninho
+#| fig-cap: Criador do conceito do mapa mental - Tony Buzan
 
+knitr::include_graphics("Imagens/toninho.jpeg")
+```
 
-## Amplamente utilizado 
+## [Exemplo]{style="color: #581D22;"}
+
+```{r}
+#| warning: false
+#| echo: false
+#| label: fig-mapa
+#| fig-cap: Exemplo de construção de mapa mental
+
+knitr::include_graphics("Imagens/exemplo_mapa_mental.jpg")
+```
+
+## [Amplamente utilizado ]{style="color: #581D22;"}
  
 - [Estudos](https://www.youtube.com/watch?v=m1qW0wPJV1M)  
 - [Organização de reuniões](Imagens/reunião de trabalho.png) 
 - Planejamento de trabalhos
 - Anotações durante a aula
  
-## O que é um mapa mental?
 
-![Exemplo de construção de mapas mentais](Imagens/exemplo legal.png)
-
-
-## Fundamentos
+## [Fundamentos]{style="color: #581D22;"}
  
  - *"Human languange is imagination"* = representação visual de conceitos ou de processos.
  
- - O uso de <span style="color:red;">palavras-chaves</span> é uma das maneiras mais eficazes de memorizar algo 
+ - O uso de <span style="color:#581D22;">palavras-chaves</span> é uma das maneiras mais eficazes de memorizar algo 
     - [TED - *Mind mapping for education*](https://youtu.be/_bRmXUCG7W4?si=GKveSXXDYXP7Q-vK&t=537)
 
 
    - Útil para relembrar, testar a retenção de informação, ou conectar mais informações de maneira visual ao que já se sabe.
 
-## Outras ferramentas similares 
+## [Como fazer a atividade]{style="color: #581D22;"}
 
-- [Mapas conceituais](https://www.if.ufrgs.br/~moreira/mapasport.pdf) 
+<span style="color:#581D22;">**1. Mapa Mental (Roteiro)**</span>
 
-::: {column-screen}
+* Deve ser **feito à mão** obrigatoriamente.
+* Apenas **1 mapa por grupo**, servindo como o roteiro do vídeo.
 
-::: {.column width="50%"}
-::: {.content-center}
-![(Moreira, 2012)](Imagens/modelo_mapa_conceitual.png)
-:::
-:::
 
-::: {.column width="50%"}
-::: {.content-center}
-![](Imagens/outro_mapa_conceitual.png)
-:::
-:::
+[**2. Produção do Vídeo**]{style="color: #581D22;"}
 
-:::
+* Gravação feita com a câmera de um **celular**.
+* O vídeo **não** pode ser confeccionado utilizando ferramentas de inteligência artificial.
+* Use a criatividade do próprio grupo!
 
-##
-[![Comparação entre mapas mentais e mapas conceituais](Imagens/tabela_conceito_mental.png)](https://doi.org/10.1057/palgrave.ivs.9500131){width="35%"}
+## [Como fazer a atividade]{style="color: #581D22;"}
 
-## Minha proposta
+[**3. Conteúdo e Formato**]{style="color: #581D22;"}
 
-**Utilização dos mapas mentais para facilitar o aprendizado de genética**
+* **Duração:** Até 3 minutos (formato *Shorts*, vídeo curto gravado verticalmente).
+* Explicar o conteúdo da semana descrito no mapa mental para um **público leigo** (linguagem acessível).
 
-- Principais passos para construir um mapa mental
 
-  - 1. Usar o papel na horizontal) para caber o máximo de informações possíveis)
-  - 2. Definir o tema central/principal;
-  - 3. As ramificações são os subtópicos do tema central;
-  - 4. Descrição de palavras-chaves, definições de cada subtópico
+[**4. Envio e Entrega**]{style="color: #581D22;"}
 
-## Minha proposta 
+* Publicar o vídeo prioritariamente no **YouTube**.
+* Enviar o **link do vídeo** na plataforma e-Disciplinas, junto do mapa mental.
 
-O ponto mais importante é pensar: **"Como posso criar um esquema que me faça lembrar sobre o assunto?"**
+## [Exemplos do que é esperado]{style="color: #581D22;"}
 
-Dica: Não tentem usar ferramentas on-line (escrever à mão faz diferença, mesmo em tablets)
+```{r}
+#| warning: false
+#| echo: false
+#| label: fig-mapa-ex1
+#| fig-cap: Boa estrutura e bom uso de cores de esquemas
+#| fig-align: center
 
-## Exemplo prático
+knitr::include_graphics("Imagens/mapa_mental_referencia.png")
+```
 
-![Mapa mental do projeto](Imagens/exemplo_mapa_mental.jpg)
- 
-## Estratégias 
+## [Exemplos do que é esperado]{style="color: #581D22;"}
 
-- Usá-lo como uma maneira de fazer revisão antes de efetivamente estudar;
-- Ir preenchendo conforme o estudo; 
+```{r}
+#| warning: false
+#| echo: false
+#| label: fig-mapa-ex2
+#| fig-cap: Estrutura objetiva, clara e bom uso de cores
+#| fig-align: center
 
-## Sites para ajudar a entender como fazer um mapa mental
+knitr::include_graphics("Imagens/Atividade mapa mental - 2ª aula - Genética da transmissão I (28 de ago. de 2025 às 21_06).jpg")
+```
+
+## [Exemplos do que é esperado]{style="color: #581D22;"}
+
+```{r}
+#| warning: false
+#| echo: false
+#| label: fig-mapa-ex3
+#| fig-cap: Com todos os conceitos e detalhes
+#| fig-align: center
+
+knitr::include_graphics("Imagens/20250825_204616.jpg")
+```
+
+## [Materiais de apoio]{style="color: #581D22;"}
 
 - University of Maine - [Creating Mind Maps](https://usm.maine.edu/learning-commons/mind-mapping/)
 
@@ -114,24 +143,3 @@ Dica: Não tentem usar ferramentas on-line (escrever à mão faz diferença, mes
 - The Universitry of Adelaide - [Guia para utilização de mapas mentais](https://www.adelaide.edu.au/writingcentre/sites/default/files/docs/learningguide-mindmapping.pdf)
 
 - The Mind Map Book
-
-## Datas das entregas {.scrollable}
-
-|**Datas**|**Temas da aula**|
-|:----:|:---------:|
-|28/ago|2ª aula - Genética da transmissão I|
-|11/set|3ª aula - Genética da transmissão II + 4ª aula - Genética da transmissão III|
-|18/set|5ª aula - Ligação I|
-|25/set|6ª aula - Ligação II|
-|02/out|7ª aula - Mutação e poliploidia|
-|09/out|8ª aula - Herança extra-cromossômica|
-|16/out|9ª aula - Genética Quantitativa I|
-|23/out|10ª aula - Genética Quantitativa II|
-|30/out|11ª aula Genética Quantitativa III|
-|06/nov|feriado na semana anterior - sem atividade|
-|13/nov|12ª aula - Genética de populações I|
-|20/nov|13ª aula - Genética de populações II|
-|27/nov|14ª aula - Genética de populações III|
-|04/dez|15ª aula - Evolução|
-
-
