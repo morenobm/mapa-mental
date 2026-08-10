@@ -1,12 +1,10 @@
 ---
-title: "Semeando a Genética em 3 min"
-institute: "Departamento de Genética - Programa de Pós-Graduação em Genética e Melhoramento de Plantas"
+title: "Semeando Genética em 3 min"
 date-format: "YYYY"
 format: 
   revealjs: 
     embed-resources: true
     inscremental: true
-    css: styles.css
   pdf: 
     toc: true
     documentclass: article
@@ -90,11 +88,11 @@ knitr::include_graphics("Imagens/exemplo_mapa_mental.jpg")
 * **Duração:** Até 3 minutos (formato *Shorts*, vídeo curto gravado verticalmente).
 * Explicar o conteúdo da semana descrito no mapa mental para um **público leigo** (linguagem acessível).
 
-
 [**4. Envio e Entrega**]{style="color: #581D22;"}
 
-* Publicar o vídeo prioritariamente no **YouTube**.
+* Publicar o vídeo no **YouTube**.
 * Enviar o **link do vídeo** na plataforma e-Disciplinas, junto do mapa mental.
+* **Prazos de entrega**: uma semana após o término de cada tema (frequência semanal ou quinzenal).
 
 ## [Exemplos do que é esperado]{style="color: #581D22;"}
 
